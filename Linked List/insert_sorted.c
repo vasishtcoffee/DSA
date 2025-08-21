@@ -4,7 +4,7 @@ struct node{
     int data;
     struct node *next;
 }*head;
-void sortedInsert(struct node* Newnode)
+void sortedInsert(struct node* Newnode,int data)
 {
     if(head==NULL || Newnode->data<=head->data)
     {   Newnode->next = head;
