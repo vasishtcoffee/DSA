@@ -43,3 +43,14 @@ int peek(struct Stack* stack){
         return INT_MIN; //return garbage value if it is empty
     return stack->array[stack->top];
 }
+void display(struct Stack* stack)
+{   if(isEmpty(stack))
+    {
+        printf("Stack is empty\n");
+    }
+    for(int i=0;i<=stack->top;i++)
+    {
+        printf("%d",stack->array[i]);
+    }
+    printf("\n");
+}
